@@ -1,0 +1,26 @@
+{
+    "name": "death_satan/thinkphp-extends-command",
+    "description": "thinkphp6",
+    "type": "library",
+    "license": "apache-2.0",
+    "authors": [
+        {
+            "name": "death-satan",
+            "email": "2771717608@qq.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0.0"
+    },
+    "keywords": ["thinkphp6","thinkphp扩展","thinkphp扩展命令"],
+    "autoload": {
+        "psr-4": {
+            "Satan\\Think\\Command\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": "Satan\\Think\\Command\\SatanInitExtendService"
+        }
+    }
+}

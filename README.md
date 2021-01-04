@@ -1,0 +1,1 @@
+#thinkphp-extedns-command 
