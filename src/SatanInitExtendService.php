@@ -1,12 +1,16 @@
 <?php
-namespace SaTan\Think\Command;
+namespace Satan\Think\Command;
 
-class SatanInitExtendService extends \think\Service
+
+use think\facade\Console;
+
+class SatanInitExtendService extends BaseService
 {
+
     public function boot()
     {
-        $this->commands(
-            'satan:publish',VendorPublish::class
-        );
+       $this->commands([
+           'satan:publish'=>VendorPublish::class
+       ]);
     }
 }
